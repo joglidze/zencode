@@ -1,0 +1,105 @@
+@import "../sass/abstracts/variables";
+
+.bg-color-lime {
+  background-color: $bg-color-lime;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.main-cont {
+  margin-top: -5rem;
+  border-radius: 100%;
+
+  .sub-cont {
+    max-width: 96%;
+
+    border-radius: 1rem;
+  }
+  .card-body {
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+    p > a {
+      color: $bg-color-secondary-lime;
+    }
+  }
+  h5,
+  button {
+    font-size: 1.4rem;
+
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
+  button {
+    padding: 12px 29px 12px 29px;
+    background-color: #fff;
+
+    &:nth-child(1) {
+      background-color: $bg-color-secondary-lime;
+      color: #fff;
+    }
+  }
+}
+
+.credit-card-cont {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+.funds-bg {
+  background-color: #ebf1f8;
+}
+.collection-funds-bg {
+  background: url("../assets/images/bg-arrow.svg") no-repeat;
+  background-position: 100% 100%;
+  z-index: 1;
+}
+a {
+  font-size: 1.4rem;
+  color: $bg-color-secondary-lime;
+  font-weight: 500;
+}
+
+.footer-cont {
+  height: 11.1rem;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 0px #0000001a;
+  p {
+    color: #7c7c7c;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.header {
+  background-color: $bg-color-lime;
+
+  h1 {
+    font-size: 1.6rem;
+
+    line-height: 2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .headers-img img {
+    background-color: $bg-color-secondary-lime;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.balance {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-white;
+  transition: font-size 0.5s, transform 0.5s;
+}

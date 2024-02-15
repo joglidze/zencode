@@ -1,0 +1,23 @@
+@import "../../../sass/abstracts/variables";
+
+.credit-card {
+  height: 11.8rem;
+  background-color: #fff;
+
+  box-shadow: 0rem 0rem 0.8rem 0rem #0000001a;
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #212121;
+  }
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}

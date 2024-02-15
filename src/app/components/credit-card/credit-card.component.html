@@ -1,0 +1,51 @@
+<div class="credit-card rounded-5 border-0">
+  <div class="row p-0 m-4 gy-4 align-items-center">
+    <div class="col-10">
+      <div class="d-flex align-items-center">
+        <div>
+          <img
+            src="../assets/images/{{ creditCard?.flag }}.svg"
+            alt="{{ creditCard?.flag }}"
+          />
+        </div>
+        <div>
+          <p class="ms-3 m-0">{{ creditCard?.cardName }}</p>
+        </div>
+      </div>
+    </div>
+    @if(creditCard?.cardLogo){
+    <div class="col-2 text-end">
+      <img
+        src="../assets/images/{{ creditCard?.cardLogo }}.svg"
+        alt="{{ creditCard?.cardLogo }}"
+      />
+    </div>
+    }@else {
+
+    <div class="col-1 text-end position-absolute w-100" style="left: -5%">
+      <h5 style="font-size: 24px; line-height: 21px; font-weight: 500">
+        {{ creditCard?.mainBalance }}
+      </h5>
+    </div>
+
+    }
+  </div>
+
+  <div class="row p-0 mx-4 gy-4">
+    @if (creditCard?.balance) {
+    <h1>{{ creditCard?.balance }}</h1>
+    }@else {
+    <h1 class="fw-light fs-4 m-0 m-2">
+      {{ creditCard?.bankInfo }}
+    </h1>
+    }
+  </div>
+  <div class="row p-0 mx-4 gy-4">
+    <div class="col-6">
+      <h3>{{ creditCard?.cardnumber }}</h3>
+    </div>
+    <div class="col-6 text-end">
+      <h3>{{ creditCard?.expirationDate }}</h3>
+    </div>
+  </div>
+</div>
