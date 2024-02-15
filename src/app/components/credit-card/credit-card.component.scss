@@ -2,9 +2,9 @@
 
 .credit-card {
   height: 11.8rem;
-  background-color: #fff;
+  background-color: $color-white;
 
-  box-shadow: 0rem 0rem 0.8rem 0rem #0000001a;
+  box-shadow: $box-shadow;
 
   h3 {
     font-size: 1.4rem;
@@ -14,10 +14,15 @@
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    color: #212121;
+    color: $color-secondary;
   }
   h1 {
     font-size: 1.8rem;
     line-height: 2.2rem;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 21px;
+    font-weight: 500;
   }
 }

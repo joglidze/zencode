@@ -32,11 +32,11 @@
   }
   button {
     padding: 12px 29px 12px 29px;
-    background-color: #fff;
+    background-color: $color-white;
 
     &:nth-child(1) {
       background-color: $bg-color-secondary-lime;
-      color: #fff;
+      color: $color-white;
     }
   }
 }
@@ -47,7 +47,7 @@
   }
 }
 .funds-bg {
-  background-color: #ebf1f8;
+  background-color: $bg-fund-icon;
 }
 .collection-funds-bg {
   background: url("../assets/images/bg-arrow.svg") no-repeat;
@@ -63,10 +63,10 @@ a {
 .footer-cont {
   height: 11.1rem;
   margin-top: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 8px 0px #0000001a;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
   p {
-    color: #7c7c7c;
+    color: $color-secondary-gray;
     font-size: 1.2rem;
     line-height: 1.6rem;
   }

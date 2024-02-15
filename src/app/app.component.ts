@@ -1,15 +1,15 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+
 import { CreditCard } from './core/interfaces/creditCard';
 import { CreditCardComponent } from './components/credit-card/credit-card.component';
-import { fromEvent, debounceTime } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, CreditCardComponent],
+  imports: [CommonModule, RouterOutlet, CreditCardComponent],
   templateUrl: './app.component.html',
   styleUrls: [
     './app.component.scss',
